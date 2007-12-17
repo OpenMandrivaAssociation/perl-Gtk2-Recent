@@ -9,7 +9,6 @@ License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  %module-%version.tar.bz2
 URL: http://gtk2-perl.sf.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: gtkspell-devel perl-ExtUtils-Depends perl-Gtk2
 BuildRequires: perl-Glib > 1.00 perl-ExtUtils-PkgConfig 
