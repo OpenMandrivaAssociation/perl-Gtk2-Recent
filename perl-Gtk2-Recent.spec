@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 10
+Release:	11
 
 Summary:    Perl module for the Recently used Files list
 License:    GPL+ or Artistic
