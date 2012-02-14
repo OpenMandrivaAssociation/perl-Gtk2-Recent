@@ -31,7 +31,7 @@ using the libegg component.
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
 find -type d -name CVS | rm -rf 
-%patch0 -b .fmtsec
+%patch0 -p0 -b .fmtsec
 
 %build
 RPM_OPT_FLAGS="$RPM_OPT_FLAGS -Os"
