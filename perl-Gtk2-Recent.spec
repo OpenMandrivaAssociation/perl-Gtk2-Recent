@@ -34,7 +34,7 @@ find -type d -name CVS | rm -rf
 %patch0 -b .fmtsec
 
 %build
-RPM_OPT_FLAGS="$RPM_OPT_FLAGS -Os -s"
+RPM_OPT_FLAGS="$RPM_OPT_FLAGS -Os"
 perl Makefile.PL INSTALLDIRS=vendor
 %make OPTIMIZE="$RPM_OPT_FLAGS"
 
