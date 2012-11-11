@@ -1,0 +1,11 @@
+--- recent-files/egg-recent-model.c.orig	2010-03-16 17:39:25.000000000 +0100
++++ recent-files/egg-recent-model.c	2010-03-16 17:39:40.000000000 +0100
+@@ -739,7 +739,7 @@
+ 	error = NULL;
+ 	if (!g_markup_parse_context_parse (ctx, content, strlen (content),
+ 					   &error)) {
+-		g_warning (error->message);
++		g_warning ("%s", error->message);
+ 		g_error_free (error);
+ 		error = NULL;
+ 		goto out;
