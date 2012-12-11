@@ -49,3 +49,51 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/*/*
 %{perl_vendorarch}/Gtk2
 %{perl_vendorarch}/auto/Gtk2
+
+
+%changelog
+* Tue Feb 14 2012 Per √òyvind Karlsen <peroyvind@mandriva.org> 0.31.0-11
++ Revision: 774113
+- add missing '-p0' flag to patch
+- don't pass '-s' to compiler flags
+- cleanout spec
+- use pkgconfig() dependencies for buildrequires
+- mass rebuild of perl extensions against perl 5.14.2
+
+* Tue Mar 16 2010 J√©r√¥me Quelin <jquelin@mandriva.org> 0.31.0-10mdv2011.0
++ Revision: 521904
+- rebuild using %%perl_convert_version; fix error format security
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.031-8mdv2009.0
++ Revision: 257167
+- rebuild
+
+* Tue Jan 15 2008 Thierry Vignaud <tv@mandriva.org> 0.031-6mdv2008.1
++ Revision: 152111
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Fri Jun 22 2007 Thierry Vignaud <tv@mandriva.org> 0.031-5mdv2008.0
++ Revision: 43102
+- rebuild
+
+
+* Fri Sep 30 2005 Nicolas LÈcureuil <neoclust@mandriva.org> 0.031-4mdk
+- BuildRequiress glitz-devel
+
+* Fri Sep 30 2005 Nicolas LÈcureuil <neoclust@mandriva.org> 0.031-3mdk
+- Another buildrequire fix
+
+* Fri Sep 30 2005 Nicolas LÈcureuil <neoclust@mandriva.org> 0.031-2mdk
+- Add buildrequires
+- mkrel
+
+* Tue Feb 08 2005 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.031-1mdk
+- initial release
+
