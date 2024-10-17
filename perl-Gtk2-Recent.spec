@@ -8,7 +8,7 @@ Release:	13
 Summary:	Perl module for the Recently used Files list
 License:	GPL+ or Artistic
 Group:		Development/GNOME and GTK+
-Url:		http://gtk2-perl.sf.net/
+Url:		https://gtk2-perl.sf.net/
 Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		Gtk2-Recent-0.031-error-format-security.patch
 
