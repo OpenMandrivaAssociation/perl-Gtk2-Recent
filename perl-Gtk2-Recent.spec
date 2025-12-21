@@ -12,6 +12,7 @@ Url:		https://gtk2-perl.sf.net/
 Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		Gtk2-Recent-0.031-error-format-security.patch
 
+BuildRequires:	make
 BuildRequires:	pkgconfig(glitz)
 Buildrequires:	pkgconfig(libgnomeui-2.0)
 BuildRequires:	pkgconfig(gtkspell-2.0)
